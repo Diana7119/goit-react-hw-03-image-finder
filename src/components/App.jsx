@@ -1,12 +1,14 @@
 import { Component } from 'react';
 import { Toaster } from 'react-hot-toast'; 
 import { ImageGallery } from './ImageGallery/ImageGallery';
-import { getSearch } from './api/getSearch';
+import { getSearch } from 'api/getSearch';
 import { Searchbar } from './Searchbar/Searchbar'; 
 import { Button } from 'components/Button/Button';
-import { Loader } from 'components/Loader/Loader'; 
+import { Loader } from './Loader/Loader';
 import { Modal } from './Modal/Modal' ; 
-export class App extends Component {
+
+
+export class App extends Component  {
   state = {
     search: '',
     images: [],
@@ -18,7 +20,8 @@ export class App extends Component {
     empty: false, 
   };
   
-   
+  
+  
   componentDidUpdate(_, PrevState) {
 
   
