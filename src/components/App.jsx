@@ -5,8 +5,7 @@ import { getSearch } from './api/getSearch';
 import { Searchbar } from './Searchbar/Searchbar'; 
 import { Button } from 'components/Button/Button';
 import { Loader } from 'components/Loader/Loader'; 
-import { Modal } from './Modal/Modal';
-
+import { Modal } from './Modal/Modal' ; 
 export class App extends Component {
   state = {
     search: '',
@@ -18,7 +17,7 @@ export class App extends Component {
     showModal: false,
     empty: false, 
   };
-
+  
    
   componentDidUpdate(_, PrevState) {
 
